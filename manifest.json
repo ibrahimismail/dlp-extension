@@ -1,0 +1,27 @@
+{
+  "name": "DLP Extension",
+  "version": "1.0",
+  "description": "DLP",
+  "background": {
+    "page": "./extension/background/script.html",
+    "persistent": false
+  },
+  "permissions": ["storage"],
+  "browser_action": {
+    "default_title": "DLP",
+    "default_popup": "./extension/build/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./extension/content_script/index.js"]
+    },
+    {
+      "matches": ["*://*/iframe.html"],
+      "all_frames": true,
+      "js": ["iframe.js"]
+    }
+  ],
+  "web_accessible_resources": ["iframe.html"],
+  "manifest_version": 2
+}

@@ -1,0 +1,26 @@
+.std-regex-input {
+  background-color: #15181c;
+  padding: 12px;
+  margin-bottom: 10px;
+  .header {
+    margin-bottom: 10px;
+    span {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    img {
+      width: 10px;
+      height: 10px;
+    }
+  }
+  .inputs {
+    box-sizing: border-box;
+    input {
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+  }
+  .add-button {
+    width: 100%;
+  }
+}

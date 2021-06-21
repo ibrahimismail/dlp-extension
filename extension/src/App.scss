@@ -1,0 +1,38 @@
+.App {
+  margin-right: 15px;
+  margin-left: 15px;
+  color: #d0d0d0;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      line-height: 1;
+    }
+  }
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .items {
+    height: 300px;
+    overflow-y: auto;
+    scrollbar-color: #555555;
+    scrollbar-width: 5px;
+    margin-bottom: 15px;
+    & > div:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: #222222;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #555555;
+    }
+  }
+}

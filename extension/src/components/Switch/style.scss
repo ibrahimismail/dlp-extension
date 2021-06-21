@@ -1,0 +1,29 @@
+.std-switch {
+  display: flex;
+  height: 25px;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .slider {
+    height: 10px;
+    background-color: #21522d;
+    width: 100%;
+  }
+  .button {
+    position: absolute;
+    right: 50%;
+    transition: right 300ms;
+    background-color: #999999;
+    height: 100%;
+    width: 50%;
+  }
+  .clicked {
+    background-color: #459951;
+    right: 0;
+    transition: right 300ms;
+  }
+  .disabled {
+    background-color: #4c4c4c;
+  }
+}

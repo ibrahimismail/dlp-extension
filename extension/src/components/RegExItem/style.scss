@@ -1,0 +1,26 @@
+.std-regex-item {
+  background-color: #15181c;
+  padding: 12px;
+  .regex-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    .title {
+      font-weight: bold;
+      font-size: 14px;
+      margin: 0;
+    }
+    .status {
+      background-color: #ec4f4d;
+      height: 15px;
+      width: 15px;
+    }
+    .enabled {
+      background-color: #459951;
+    }
+  }
+  .regex {
+    color: #52575e;
+    letter-spacing: 1px;
+  }
+}
